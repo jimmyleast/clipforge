@@ -8,7 +8,7 @@ RUN apt-get update && \
 WORKDIR /app
 
 # Copy workspace files
-COPY package.json pnpm-workspace.yaml turbo.json ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml turbo.json ./
 COPY packages/ packages/
 COPY apps/worker/ apps/worker/
 
